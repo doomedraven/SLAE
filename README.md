@@ -1,1 +1,1 @@
-SLAE-513 Andriy Brukgovetskyy
+SLAE-513 Andriy Brukhovetskyy
