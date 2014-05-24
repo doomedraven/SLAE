@@ -7,7 +7,7 @@ echo '[+] Linking ...'
 ld -o $1 $1.o
 
 echo '[+] Your Shellcode:'
-echo for i in $(objdump -d bind | grep '^ ' |cut -f2); do echo -n "\x"$i; done;echo
+echo for i in $(objdump -d $1 | grep '^ ' |cut -f2); do echo -n "\x"$i; done;echo
 
 echo '[+] To compile it, execute'
 echo 'gcc -ggdb -z execstack -fno-stack-protector shellcode.c -o shellcode'
